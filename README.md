@@ -13,18 +13,17 @@ Installation
 To use the Azure Blob Storage Service in your .NET project, you can install it via NuGet Package Manager:
 
 bash
-Copy code
 dotnet add package Azure.Storage.Blobs
 Usage
 Initialize BlobStorageService:
 csharp
-Copy code
+
 string connectionString = "your_connection_string_here";
 string containerName = "your_container_name_here";
 BlobStorageService blobStorageService = new BlobStorageService(connectionString);
 Perform Blob Operations:
 csharp
-Copy code
+
 // Upload Blob
 await blobStorageService.UploadBlobAsync(containerName, filePath, blobName);
 
